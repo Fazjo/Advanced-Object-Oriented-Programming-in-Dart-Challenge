@@ -1,0 +1,49 @@
+// Define a class for a student
+class Student {
+  String name;
+  int age;
+  int gradeLevel;
+
+  Student(this.name, this.age, this.gradeLevel);
+
+  // Method to print student's information
+  void printInfo() {
+    print('Student Name: $name, Age: $age, Grade Level: $gradeLevel');
+  }
+}
+
+// Define a class for a teacher
+class Teacher {
+  String name;
+  int age;
+  String subject;
+
+  Teacher(this.name, this.age, this.subject);
+
+  // Method to print teacher's information
+  void printInfo() {
+    print('Teacher Name: $name, Age: $age, Subject: $subject');
+  }
+}
+
+// Define a third class to create student and teacher objects
+class School {
+  void createObjects() {
+    // Create instances of student and teacher
+    var student = Student('Alice', 15, 10);
+    var teacher = Teacher('Mr. Smith', 35, 'Math');
+
+    // Call methods to print information
+    student.printInfo();
+    teacher.printInfo();
+  }
+}
+
+void main() {
+  // Create an instance of the School class
+  var school = School();
+
+  // Call the method to create objects and print information
+  school.createObjects();
+}
+
